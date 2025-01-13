@@ -60,14 +60,10 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #003366;
-    padding: 10px 0;
-    position: fixed; /* Make it fixed */
-    top: 0; /* Stick to the top of the page */
-    width: 100%; /* Ensure it spans the width of the viewport */
-    z-index: 1000; /* Ensure it stays above other content */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav a {
