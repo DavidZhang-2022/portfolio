@@ -3,188 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhiying Zhang - Interactive Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003366;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #e6f2ff;
-            border: 1px solid #cce0ff;
-            padding: 10px;
-            border-radius: 4px;
-            flex: 1 1 calc(33.333% - 20px);
-            text-align: center;
-        }
-        .dashboard {
-            margin-bottom: 20px;
-        }
-        .dashboard iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #003366;
-            color: white;
-        }
-    </style>
+    <title>David Zhang - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>David Zhang</h1>
-        <p>Data Analyst & Research Professional, delivering actionable insights and solutions.</p>
+        <div class="header-content">
+            <h1>David Zhang</h1>
+            <p>Data Analyst & Research Professional, delivering actionable insights and solutions.</p>
+        </div>
+        <nav class="top-nav">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I am David, a seasoned data analyst with extensive experience...</p>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div>
-        <img src="image/David1.jpg" alt="David Zhang" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px;">
-        </div>
-        <p>Welcome to my website! I am David, a motivated Research Analyst with extensive experience in data analysis, statistical modeling, and data visualization. I am passionate about transforming data into actionable insights to drive decision-making. Bilingual in English and Mandarin, I bring a global perspective to problem-solving. Explore my portfolio to learn more about my work.</p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span>Power BI</span>
+                <div class="skill-bar" data-percent="90%"></div>
+            </div>
+            <div class="skill">
+                <span>SQL</span>
+                <div class="skill-bar" data-percent="85%"></div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="skill-bar" data-percent="80%"></div>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Power BI</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Python</div>
-            <div class="skill">R</div>
-            <div class="skill">Tableau</div>
-            <div class="skill">Data Visualization</div>
-        </div>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Detail your professional journey here...</p>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Health Information Research Officer</h3>
-        <p>Ministry of Health, BC (09/2022 – Current)</p>
-        <ul>
-            <li>Developed dashboards and visualizations using Power BI and Tableau.</li>
-            <li>Conducted research and data analysis, merging large datasets with SQL and R.</li>
-            <li>Delivered insights through presentations, reports, and dashboards.</li>
-        </ul>
-        <h3>Research Analyst</h3>
-        <p>Ministry of Education and Child Care, BC (04/2021 – 09/2022)</p>
-        <ul>
-            <li>Maintained and updated dashboards, analyzed COVID-19 data, and supported ad-hoc client requests.</li>
-            <li>Utilized Power BI and Tableau for visualizations and SQL for data extraction.</li>
-        </ul>
-        <h3>Data Engineer</h3>
-        <p>Hawkeye Global Tech. Co. Ltd, Vancouver, BC (01/2016 – 12/2019)</p>
-        <ul>
-            <li>Designed software system architecture for smart fleet management systems.</li>
-            <li>Developed core dispatching algorithms based on GPS data and transportation plans.</li>
-            <li>Created data models for structured and unstructured data using SQL Server and MongoDB.</li>
-        </ul>
-        <h3>Visiting Scholar - Data Analysis of Healthcare</h3>
-        <p>Purdue University, USA (02/2013 – 02/2014)</p>
-        <ul>
-            <li>Researched the application of industrial engineering in healthcare.</li>
-            <li>Modeled process flows in the healthcare sector and analyzed performance data.</li>
-            <li>Optimized hospital operational workflows for efficiency.</li>
-        </ul>
-    </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="dashboard1.jpg" alt="Dashboard 1">
+                    <h3>COVID-19 Dashboard</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="dashboard2.jpg" alt="Dashboard 2">
+                    <h3>Health Program Evaluation</h3>
+                </div>
+            </div>
+        </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="dashboard">
-            <h3>COVID-19 Data Dashboard</h3>
-            <iframe src="https://public.tableau.com/views/COVID-19Dashboard" title="COVID-19 Dashboard"></iframe>
-        </div>
-        <div class="dashboard">
-            <h3>Health Program Evaluation</h3>
-            <iframe src="https://public.tableau.com/views/HealthProgramEvaluation" title="Health Program Evaluation"></iframe>
-        </div>
-        <div class="dashboard">
-            <h3>Predictive Analytics Project</h3>
-            <iframe src="https://public.tableau.com/views/PredictiveAnalyticsProject" title="Predictive Analytics Project"></iframe>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <h3>Ph.D. in Engineering</h3>
-        <p>Beijing Institute of Technology, China (09/1998 – 05/2003)</p>
-        <ul>
-            <li>Thesis: "Advanced Data Analysis Techniques"</li>
-            <li>Graduated with Honors</li>
-        </ul>
-        <h3>Master of Science in Engineering</h3>
-        <p>University of Victoria, Canada (09/2015 – 05/2018)</p>
-        <ul>
-            <li>Thesis: "Advanced Data Analysis Techniques"</li>
-            <li>Graduated with Honors</li>
-        </ul>
-        <h3>Bachelor of Engineering in Engineering</h3>
-        <p>Dalian Jiaotong University, China (09/1989 – 07/1993)</p>
-        <ul>
-            <li>Graduated with Distinction</li>
-            <li>Relevant Courses: Data Structures, Algorithms, Database Management</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, please reach out via email at <a href="mailto:zhangzy2003@hotmail.com">zhangzy2003@hotmail.com</a>.</p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Zhiying Zhang. All rights reserved.</p>
+        <p>&copy; 2025 David Zhang. All rights reserved.</p>
     </footer>
 </body>
 </html>
