@@ -12,6 +12,33 @@ body {
     padding: 20px;
 }
 
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #ddd;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1.8em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
 /* Left Column */
 .left-column {
     flex: 1; /* Take 1 part of the space */
