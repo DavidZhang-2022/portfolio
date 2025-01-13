@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    display: flex; /* Use Flexbox for two-column layout */
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -21,8 +21,7 @@ body {
 .profile-picture {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Make the image circular */
-    border: 3px solid #ddd;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -41,7 +40,7 @@ body {
 
 /* Left Column */
 .left-column {
-    flex: 1; /* Take 1 part of the space */
+    flex: 1;
     margin-right: 20px;
 }
 
@@ -49,16 +48,32 @@ body {
     margin-bottom: 20px;
 }
 
+.skills ul, .qualifications ul {
+    padding-left: 20px;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
 /* Right Column */
 .right-column {
-    flex: 2; /* Take 2 parts of the space */
+    flex: 2;
 }
 
 .right-column section {
     margin-bottom: 20px;
 }
 
-/* Headings */
+.job ul {
+    padding-left: 20px;
+}
+
+.degree {
+    margin-bottom: 10px;
+}
+
+/* Section Headings */
 h2 {
     color: #333;
     border-bottom: 2px solid #ddd;
@@ -66,37 +81,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Skills List */
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Projects Styling */
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    margin: 5px 0;
-    font-size: 1.1em;
-}
-
-.project p {
-    color: #555;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack columns on smaller screens */
+        flex-direction: column;
     }
 
     .left-column, .right-column {
