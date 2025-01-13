@@ -7,10 +7,10 @@ body {
     padding: 0; Remove default padding 
 }
 nav {
-    background-color: rgb(126, 168, 161);
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav a {
     color: black;
