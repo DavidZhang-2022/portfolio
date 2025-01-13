@@ -3,82 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Zhang - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .skills, .projects, .experience, .education {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>David Zhang</h1>
-            <p>Data Analyst & Research Professional, delivering actionable insights and solutions.</p>
+
+<header>
+    <h1>Professional Portfolio</h1>
+    <p>Bilingual Research Analyst | Data Scientist | Educator</p>
+</header>
+
+<div class="container">
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Motivated, client-oriented, and responsible Research Analyst with significant experience in analytical thinking, conflict management, and decision-making skills. Highly educated with Bachelor’s, Master’s, and PhD degrees in Engineering. Bilingual in English and Mandarin.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Data Management:</strong> Over 10 years of experience in data model usage, performance measurement, trend identification, and visualization of data insights.</li>
+            <li><strong>Tools:</strong> Microsoft Excel, R, Python, PL/SQL, Oracle, SQL Developer, SPSS, Matlab, Power BI, IBM Cognos, CPlex, SAS, Tableau.</li>
+            <li><strong>Research:</strong> Statistical and predictive modeling, quantitative methods, regression analysis, neural networks.</li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <div>
+            <h3>Health Information Research Officer | Ministry of Health, BC (09/2022 - Current)</h3>
+            <ul>
+                <li>Developed and conducted data analysis and research.</li>
+                <li>Maintained dashboards using Power BI and Tableau.</li>
+                <li>Extracted and merged data from large datasets using SQL and R.</li>
+            </ul>
+
+            <h3>Research Analyst | Ministry of Education and Child Care, BC (04/2021 - 09/2022)</h3>
+            <ul>
+                <li>Developed and maintained dashboards for programs.</li>
+                <li>Performed data gathering and COVID-19 tracking analysis.</li>
+                <li>Extracted and merged data using SQL and R.</li>
+            </ul>
+
+            <h3>Research Analyst | Ministry of Advanced Education, BC (12/2020 - 04/2021)</h3>
+            <ul>
+                <li>Conducted qualitative and quantitative research.</li>
+                <li>Updated dashboards and managed large datasets.</li>
+                <li>Handled ad-hoc requests using JIRA.</li>
+            </ul>
         </div>
-        <nav class="top-nav">
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    </section>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome! I am David, a seasoned data analyst with extensive experience...</p>
-        </section>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>University of Victoria, BC:</strong> Master of Applied Science (2015 - 2018)</li>
+            <li><strong>Beijing Institute of Technology, China:</strong> PhD in Engineering (1998 - 2003)</li>
+            <li><strong>Dalian Jiao Tong University, China:</strong> Bachelor in Mechanical Engineering (1989 - 1993)</li>
+        </ul>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill">
-                <span>Power BI</span>
-                <div class="skill-bar" data-percent="90%"></div>
-            </div>
-            <div class="skill">
-                <span>SQL</span>
-                <div class="skill-bar" data-percent="85%"></div>
-            </div>
-            <div class="skill">
-                <span>Python</span>
-                <div class="skill-bar" data-percent="80%"></div>
-            </div>
-        </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+    </section>
+</div>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Detail your professional journey here...</p>
-        </section>
+<footer>
+    <p>&copy; 2025 Professional Portfolio. All Rights Reserved.</p>
+</footer>
 
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="dashboard1.jpg" alt="Dashboard 1">
-                    <h3>COVID-19 Dashboard</h3>
-                </div>
-                <div class="portfolio-item">
-                    <img src="dashboard2.jpg" alt="Dashboard 2">
-                    <h3>Health Program Evaluation</h3>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 David Zhang. All rights reserved.</p>
-    </footer>
 </body>
 </html>
