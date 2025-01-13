@@ -3,129 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Resume - [Your Name]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            color: #333;
+            background-color: #f4f4f9;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+        .header {
+            display: flex;
+            align-items: center;
         }
-        header h1 {
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .header h1 {
             margin: 0;
-            font-size: 2.5em;
         }
-        section {
+        .header p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .section {
             margin: 20px 0;
         }
-        .skills, .projects, .experience, .education {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        h2 {
+        .section h2 {
+            margin-bottom: 10px;
             color: #333;
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #ccc;
             padding-bottom: 5px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
+        .skills span {
+            display: inline-block;
+            background: #0073e6;
             color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
         }
-        .contact {
-            margin-top: 20px;
-            text-align: center;
+        .project, .experience, .education {
+            margin-bottom: 15px;
+        }
+        .project h3, .experience h3, .education h3 {
+            margin: 0;
+            color: #0073e6;
+        }
+        .project p, .experience p, .education p {
+            margin: 5px 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Professional Portfolio</h1>
-    <p>Bilingual Research Analyst | Data Scientist | Educator</p>
-</header>
-
-<div class="container">
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Motivated, client-oriented, and responsible Research Analyst with significant experience in analytical thinking, conflict management, and decision-making skills. Highly educated with Bachelor’s, Master’s, and PhD degrees in Engineering. Bilingual in English and Mandarin.</p>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Data Management:</strong> Over 10 years of experience in data model usage, performance measurement, trend identification, and visualization of data insights.</li>
-            <li><strong>Tools:</strong> Microsoft Excel, R, Python, PL/SQL, Oracle, SQL Developer, SPSS, Matlab, Power BI, IBM Cognos, CPlex, SAS, Tableau.</li>
-            <li><strong>Research:</strong> Statistical and predictive modeling, quantitative methods, regression analysis, neural networks.</li>
-        </ul>
-    </section>
-
-    <section class="experience">
-        <h2>Experience</h2>
-        <div>
-            <h3>Health Information Research Officer | Ministry of Health, BC (09/2022 - Current)</h3>
-            <ul>
-                <li>Developed and conducted data analysis and research.</li>
-                <li>Maintained dashboards using Power BI and Tableau.</li>
-                <li>Extracted and merged data from large datasets using SQL and R.</li>
-            </ul>
-
-            <h3>Research Analyst | Ministry of Education and Child Care, BC (04/2021 - 09/2022)</h3>
-            <ul>
-                <li>Developed and maintained dashboards for programs.</li>
-                <li>Performed data gathering and COVID-19 tracking analysis.</li>
-                <li>Extracted and merged data using SQL and R.</li>
-            </ul>
-
-            <h3>Research Analyst | Ministry of Advanced Education, BC (12/2020 - 04/2021)</h3>
-            <ul>
-                <li>Conducted qualitative and quantitative research.</li>
-                <li>Updated dashboards and managed large datasets.</li>
-                <li>Handled ad-hoc requests using JIRA.</li>
-            </ul>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="profile-pic-placeholder.jpg" alt="Profile Picture">
+            <div>
+                <h1>Your Name</h1>
+                <p>Research Analyst | Data Scientist | Engineer</p>
+                <p>Based in [Your Location]</p>
+            </div>
         </div>
-    </section>
 
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>University of Victoria, BC:</strong> Master of Applied Science (2015 - 2018)</li>
-            <li><strong>Beijing Institute of Technology, China:</strong> PhD in Engineering (1998 - 2003)</li>
-            <li><strong>Dalian Jiao Tong University, China:</strong> Bachelor in Mechanical Engineering (1989 - 1993)</li>
-        </ul>
-    </section>
+        <!-- About Section -->
+        <div class="section about">
+            <h2>About</h2>
+            <p>Motivated, client-oriented, and responsible Research Analyst with significant experience in comprehension of analytical thinking, conflict management, and decision-making skills. Bilingual in English and Mandarin, with a strong academic background in engineering.</p>
+        </div>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
-    </section>
-</div>
+        <!-- Skills Section -->
+        <div class="section skills">
+            <h2>Skills</h2>
+            <span>SQL</span>
+            <span>Python</span>
+            <span>R</span>
+            <span>Tableau</span>
+            <span>Power BI</span>
+            <span>Data Visualization</span>
+            <span>Statistical Modeling</span>
+            <span>Predictive Analytics</span>
+        </div>
 
-<footer>
-    <p>&copy; 2025 Professional Portfolio. All Rights Reserved.</p>
-</footer>
+        <!-- Projects Section -->
+        <div class="section projects">
+            <h2>Projects</h2>
 
+            <div class="project">
+                <h3>COVID-19 Data Analysis Dashboard</h3>
+                <p>Developed an interactive dashboard using Power BI to track and visualize COVID-19 data trends and patterns for actionable insights.</p>
+            </div>
+
+            <div class="project">
+                <h3>Smart Fleet Management System</h3>
+                <p>Designed and implemented a software system for fleet management, incorporating modules for tracking, dispatching, and reporting.</p>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section experience">
+            <h2>Experience</h2>
+
+            <div class="experience">
+                <h3>Health Information Research Officer</h3>
+                <p>Ministry of Health, BC | 09/2022 - Present</p>
+                <p>Developed data analysis strategies and dashboards using Power BI, SQL, and R for health information programs.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Research Analyst</h3>
+                <p>Ministry of Education and Child Care, BC | 04/2021 - 09/2022</p>
+                <p>Conducted data analysis, developed dashboards, and managed datasets for internal and external client requests.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section education">
+            <h2>Education</h2>
+
+            <div class="education">
+                <h3>Master of Applied Science</h3>
+                <p>University of Victoria | 2015 - 2018</p>
+            </div>
+
+            <div class="education">
+                <h3>PhD of Engineering</h3>
+                <p>Beijing Institute of Technology | 1998 - 2003</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
