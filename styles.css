@@ -1,83 +1,78 @@
-/* styles.css */
+/* General Reset */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    line-height: 1.6;
 }
 
-/* Header Section */
-header {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-}
-
-header .header-content {
-    margin-bottom: 10px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
-}
-
-/* Top Navigation */
-.top-nav {
-    position: sticky;
-    top: 0;
-    background-color: #003366;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-.top-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.top-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-main {
+.container {
+    display: flex; /* Use Flexbox for two-column layout */
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section {
-    margin-bottom: 30px;
+/* Left Column */
+.left-column {
+    flex: 1; /* Take 1 part of the space */
+    margin-right: 20px;
 }
 
+.left-column section {
+    margin-bottom: 20px;
+}
+
+/* Right Column */
+.right-column {
+    flex: 2; /* Take 2 parts of the space */
+}
+
+.right-column section {
+    margin-bottom: 20px;
+}
+
+/* Headings */
 h2 {
-    color: #004080;
-    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+/* Skills List */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Styling */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .left-column, .right-column {
+        margin-right: 0;
+    }
 }
