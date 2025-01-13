@@ -3,206 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Zhang - Data Analyst Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .header h1 {
-            margin: 10px 0;
-            font-size: 28px;
-        }
-
-        .header h2 {
-            margin: 5px 0;
-            font-size: 20px;
-            color: #555;
-        }
-
-        .header .links a {
-            margin: 0 10px;
-            color: #0073b1;
-            text-decoration: none;
-        }
-
-        .section {
-            margin-top: 40px;
-        }
-
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            border-bottom: 2px solid #0073b1;
-            display: inline-block;
-        }
-
-        .skills span {
-            display: inline-block;
-            background-color: #0073b1;
-            color: white;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 15px;
-            font-size: 14px;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .project {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            flex: 1 1 calc(48%);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .project img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .project .content {
-            padding: 15px;
-        }
-
-        .project h3 {
-            margin-top: 0;
-            font-size: 18px;
-        }
-
-        .project p {
-            margin: 10px 0;
-            color: #555;
-        }
-
-        .experience, .education {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .experience-item {
-            margin-bottom: 20px;
-        }
-
-        .experience-item h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .experience-item p {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .education-item h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .education-item p {
-            margin: 5px 0;
-            color: #555;
-        }
-    </style>
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="David1.jpg" alt="David Zhang">
-            <h1>David Zhang</h1>
-            <h2>Data Analyst | Based in Vancouver, Canada</h2>
-            <div class="links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Email</a>
-            </div>
+        <!-- Left Column -->
+        <div class="left-column">
+            <section class="about">
+                <h2>About</h2>
+                <p>Quantitative economics graduate, enjoy working with business stakeholders to help support strategy based on quantitative insights and statistical models.</p>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>Tableau</li>
+                    <li>Excel</li>
+                    <li>Statistical Modeling</li>
+                    <li>Sampling Techniques</li>
+                </ul>
+            </section>
         </div>
 
-        <div class="section about">
-            <h2>About</h2>
-            <p>Motivated, client-oriented, and responsible Research Analyst with significant experience in comprehension of analytical thinking, conflict management and decision-making skills. Highly educated with Bachelor’s, and Master’s degrees in Engineering. Bilingual in English and Mandarin.</p>
-        </div>
-
-        <div class="section skills">
-            <h2>Skills</h2>
-            <P>
-            <span>SQL</span>
-            <span>Python</span>
-            <span>R</span>
-            <span>Power BI</span>
-            <span>Excel</span>
-            <span>Statistical Modelling</span>
-            <span>Sampling Techniques</span>
-            </P>
-        </div>
-
-        <div class="section projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="airbnb.jpg" alt="AirBnB Project">
-                <div class="content">
+        <!-- Right Column -->
+        <div class="right-column">
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project">
                     <h3>AirBnB Listings Price Prediction</h3>
-                    <p>Prediction of AirBnB prices growth in Milan (Italy) to provide insights on areas with monetization opportunities. </p>
+                    <p>Prediction of AirBnB prices growth in Milan (Italy) to provide insights on areas that might soon get more opportunities to monetize with short stays.</p>
                 </div>
-            </div>
-            <div class="project">
-                <img src="spotify.jpg" alt="Spotify Project">
-                <div class="content">
+                <div class="project">
                     <h3>Spotify Visual Data Art</h3>
-                    <p>An algorithm creating cool animations tailored to music tracks, engaging user experiences inspired by melodies and text.</p>
+                    <p>Algorithm to create animations for music tracks, tailored to the melody and text, creating engaging user experiences.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="section experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Data Analyst at Amazon</h3>
-                <p>Mar 2022 - Present</p>
-                <p>Leading development of data analytics strategies, managing teams to ensure data accuracy, and providing insights to senior management.</p>
-            </div>
-        </div>
-
-        <div class="section education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Quantitative Economics, Master of Science</h3>
-                <p>University of London, 2022</p>
-                <p>High-quality training in advanced research methods and formal economic models.</p>
-            </div>
+            </section>
+            <section class="experience">
+                <h2>Experience</h2>
+                <p><strong>Data Analyst at Amazon (Mar 2022 - Present)</strong></p>
+                <p>Leading data analytics strategies to support business goals by analyzing customer behavior and product performance.</p>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <p><strong>Master of Science in Quantitative Economics (2022)</strong></p>
+                <p>High-quality quantitative training in economics, advanced research methods, and supervised research thesis.</p>
+            </section>
         </div>
     </div>
 </body>
