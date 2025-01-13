@@ -1,0 +1,66 @@
+body {
+    /* background-image: url('watercolor.jpg'); Path to your background image */
+    background-size: cover; Cover the entire viewport
+    background-position: center; Center the background image 
+    background-repeat: no-repeat; Do not repeat the background image 
+    margin: 0; Remove default margin 
+    padding: 0; Remove default padding 
+}
+nav {
+    background-color: rgb(126, 168, 161);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: black;
+    font-family: Monospace;
+    font-size:x-large;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: none;
+    color:blue;
+}
+
+.nav-link {
+    color: #333; /* Default color for unselected links */
+    /* text-decoration: none;*/
+}
+
+.nav-link.selected {
+    color: red; /* Color for selected link */
+ } 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.service-image {
+    width: 150px; /* Adjust image size */
+    margin-right: 20px; /* Add space between image and details */
+}
+
+.service-details {
+    flex: 1; /* Take remaining space */
+}
