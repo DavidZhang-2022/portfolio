@@ -1,102 +1,83 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f9f9f9;
-    padding-top: 60px; /* Adjust to match nav height */
 }
 
-.container {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;
-}
-
-.left {
-    flex: 1; /* Take up 50% of container */
-    padding-right: 1px; /* Add some spacing */
+/* Header Section */
+header {
+    background-color: #004080;
+    color: white;
     text-align: center;
+    padding: 20px 0;
+    position: relative;
 }
 
-.left h3{
-    font-size: 18px;
-    font-family: Arial,sans-serif;
-    color:#666;
-}
-
-.right {
-    flex: 2; /* Take up 50% of container */
-    padding-left: 1px;
-    font-size: larger;
-    text-align: justify;
-}
-
-.profile-picture {
-    width: 100%; /* Make the picture fill its container */
-    max-width: 200px; /* Limit the maximum width */
-    border-radius: 50%;
-}
-
-.line {
-    border-bottom: 1px solid #333; /* Add a horizontal line */
-    margin-bottom: 10px; /* Add some spacing */
-}
-.social-icons {
-    margin-top: 10px; /* Add some space between icons and profile information */
-}
-
-.social-icons .icon {
-    margin-right: 10px; /* Add space between icons */
-    color: blue; /* Change icon color */
-    font-size: 24px; /* Adjust icon size */
-}
-
-.social-icons .icon:last-child {
-    margin-right: 0; /* Remove right margin from the last icon */
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a.active {
-    color: green;
-}
-
-.section {
-    padding: 60px 20px; /* Add padding to avoid content being hidden behind the fixed nav */
-    margin-top: 50px; /* Add margin to avoid content being hidden behind the fixed nav */
-}
-
-.skills-list, .experience-list, .volunteer-list, .courses-list, .education-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills-list li, .experience-list li, .volunteer-list li, .courses-list li, .education-list li {
+header .header-content {
     margin-bottom: 10px;
 }
 
-.experience-list li, .volunteer-list li, .education-list li {
-    display: flex;
-    justify-content: space-between;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.date {
-    font-style: italic;
-    color: #666;
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Top Navigation */
+.top-nav {
+    position: sticky;
+    top: 0;
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #004080;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
